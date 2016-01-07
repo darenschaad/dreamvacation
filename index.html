@@ -4,21 +4,34 @@
     <title>Michael and Daren's vacation spot</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <!-- <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8"> -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" media="screen">
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
-    <div class="container">
-      <div>
-        <header class="page-header">
-          <ul class="nav nav-tabs pull-right">
-            <li class="active"><a href="#">Home</a></li>
-            <li class="active"><a href="https://www.google.com/">About our Vacation</a></li>
-            <li class="active"><a href="#">Travel tips</a></li>
-          </ul>
-          <h3>Dream Vacation</h3>
-        </header>
-      </div>
 
+     <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+
+         <a class="navbar-brand text-muted" href="#">Brazil</a>
+         <div class="collapse navbar-collapse">
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#">Home</a></li>
+                <li class="active"><a href="https://www.google.com/">About our Vacation</a></li>
+                <li class="active"><a href="#">Travel tips</a></li>
+            </ul>
+
+        </div>
+      </div>
+     </div>
+
+    <div class="container">
       <div class="jumbotron">
         <h1>Dream Vacation</h1>
         <p class="lead">This is the place we both dream of going to. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -80,5 +93,7 @@
           <p>&copy; 2016 Michael Smith &amp; Daren Schaad, Inc.</p>
         </div>
       </div>
+      <script src="http://code.jquery.com/jquery.js"></script>
+      <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
