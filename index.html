@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
-
+   <!--NAVBAR  -->
      <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
 
@@ -24,40 +24,88 @@
             <ul class="nav navbar-nav navbar-right">
                 <li class="active"><a href="#">Home</a></li>
                 <li class="active"><a href="https://www.google.com/">About our Vacation</a></li>
-                <li class="active"><a href="#">Travel tips</a></li>
+                <li class="dropdown active">
+                  <a data-toggle="dropdown" data-target="#">Travel tips<b class="caret">
+                  </b></a>
+                  <ul class = "dropdown-menu">
+                    <li><a href="#">About Treehouse</a></li>
+                    <li><a href="#">Video Library</a></li>
+                    <li><a href="#">Learning Adventures</a></li>
+                    <li class="divider"></li>
+                    <li><a href="https://www.amazon.com/">Plans &amp; Pricing</a></li>
+                  </ul>
+                </li>
             </ul>
 
         </div>
       </div>
      </div>
+     <!--CAROUSEL  -->
+     <div id="myCarousel" class="carousel slide jumbotron">
+       <div class="container">
+         <ol class="carousel-indicators">
+           <li class="active" data-target="#myCarousel" data-slide-to="0"></li>
+           <li data-target="#myCarousel" data-slide-to="1"></li>
+           <li data-target="#myCarousel" data-slide-to="2"></li>
+         </ol>
+         <div class="carousel-inner">
+           <div class="item active">
+             <h1>Dream Vacation</h1>
+             <p class="lead">This is the place we both dream of going to.
+             </p>
+             <p class="btn-group">
+               <a class="btn btn-success btn-lg" href="http:">Download the app</a>
+               <a class="btn btn-default btn-lg hidden-xs" href="#">Text me the link</a>
+             </p>
+           </div>
+           <div class="item">
+             <h1>Learn how to build it for iOS</h1>
+               <p class="lead">We'll teach you how to build it from scratch!</p>
+               <p>
+                 <a class="btn btn-success btn-lg" href="#">Get started today!</a>
+               </p>
+           </div>
+           <div class="item">
+             <h1>Learn how to build it for Android</h1>
+             <p class="lead">We'll teach you how to build it from scratch!</p>
+             <p>
+               <a class="btn btn-success btn-lg" href="#">Get started today!</a>
+             </p>
+           </div>
+         </div>
+       </div>
+       <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+         <span class="icon-prev"></span>
+       </a>
+       <a class="right carousel-control" href="#myCarousel" data-slide="next">
+         <span class="icon-next"></span>
+       </a>
+     </div>
 
+
+    <!--END CAROUSEL  -->
+<!--JUMBOTRON  -->
     <div class="container">
-      <div class="jumbotron">
-        <h1>Dream Vacation</h1>
-        <p class="lead">This is the place we both dream of going to. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <p class="btn-group">
-          <a class="btn btn-success btn-lg" href="http:">Download the app</a>
-          <a class="btn btn-default btn-lg hidden-xs" href="#">Text me the link</a>
-        </p>
-    </div>
       <div class="row">
         <div class="col-sm-4">
-          <h2>Delete Photo &amp; video based on a timer</h2>
+          <b class="glyphicon glyphicon-camera"></b>
+          <h2>View the local tourist attractions</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </div>
 
         <div class="col-sm-4">
-          <h2>Delete Photo &amp; video based on a timer</h2>
+          <b class="glyphicon glyphicon-globe"></b>
+          <h2>Explore Fortaleza &amp; the local sites</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </div>
 
         <div class="col-sm-4">
-          <h2>Delete Photo &amp; video based on a timer</h2>
+          <b class="glyphicon glyphicon-eye-open"></b>
+          <h2>View photos in and around Fortaleza</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
